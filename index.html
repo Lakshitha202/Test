@@ -161,15 +161,6 @@
   overflow:hidden;
   border:4px solid var(--bg);
   }
-  @keyframes spin{ to{ transform:rotate(360deg); } }
-  .profile-photo{
-    width:100%; height:100%; border-radius:50%;
-    background:var(--bg-2) center/cover no-repeat;
-    display:flex; align-items:center; justify-content:center;
-    animation:spin-reverse 10s linear infinite;
-    overflow:hidden;
-    border:4px solid var(--bg);
-  }
   @keyframes spin-reverse{ to{ transform:rotate(-360deg); } }
   .profile-photo img{ width:100%; height:100%; object-fit:cover; }
   .profile-photo .placeholder{
@@ -180,7 +171,6 @@
   height:100%;
   object-fit:cover;
   object-position:center top; /* face උඩින් crop වෙන්නේ නැතුව */
-  border-radius:10%;
 }
   }
   .floating-chip{
