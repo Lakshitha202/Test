@@ -173,6 +173,14 @@
   .profile-photo img{ width:100%; height:100%; object-fit:cover; }
   .profile-photo .placeholder{
     font-family:var(--disp); color:var(--muted); font-size:14px; text-align:center; padding:20px;
+    .profile-photo img,
+.profile-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top; /* face උඩින් crop වෙන්නේ නැතුව */
+  border-radius:50%;
+}
   }
   .floating-chip{
     position:absolute;
@@ -353,10 +361,11 @@
   </div>
 
   <div class="profile-wrap">
-    <div class="profile-ring style="width:800px; height:300px;">
+    <div class="profile-ring">
       <div class="profile-photo">
         <!-- Replace the div below with: <img src="IMG-20260502-WA0063.jpg" alt="Lakshitha Rathnayaka"> -->
-        <div class="placeholder">:<img src="converted_image.png" alt="Lakshitha Rathnayaka" style="width:800px; height:300px;">></div>
+  <div class="profile-photo"> <img src="converted_image.png" alt="Your Name" class="profile-img"></div>
+      </div>
       </div>
     </div>
     <div class="floating-chip c1">⚡ Fast</div>
