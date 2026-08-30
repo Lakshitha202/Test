@@ -153,12 +153,13 @@
 
   /* ---------- Profile visual ---------- */
   .profile-wrap{ position:relative; display:flex; justify-content:center; }
-  .profile-ring{
-    position:relative; width:min(340px,80vw); aspect-ratio:1;
-    border-radius:50%;
-    background:conic-gradient(from 0deg, var(--violet), var(--mint), var(--gold), var(--violet));
-    padding:5px;
-    animation:spin 10s linear infinite;
+.profile-photo{
+  width:100%; height:100%; border-radius:50%;
+  background:var(--bg-2) center/cover no-repeat;
+  display:flex; align-items:center; justify-content:center;
+  /* animation removed - photo is now static */
+  overflow:hidden;
+  border:4px solid var(--bg);
   }
   @keyframes spin{ to{ transform:rotate(360deg); } }
   .profile-photo{
