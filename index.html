@@ -413,29 +413,48 @@
 
 
 
-/* ---------- Sinhala Quote Block ---------- */
-.quote-sinhala{
-  text-align:center;
-  max-width:700px;
-  margin:0 auto 60px;
-  padding:0 20px;
+/* ---------- Moving Sinhala Quote (looping marquee) ---------- */
+.quote-marquee-wrap{
+  overflow:hidden;
+  white-space:nowrap;
+  padding:24px 0 60px;
+  border-top:1px solid var(--glass-b);
+  border-bottom:1px solid var(--glass-b);
 }
-.quote-sinhala .si{
+
+.quote-marquee-track{
+  display:inline-flex;
+  gap:80px;
+  animation:quoteScroll 20s linear infinite;
+}
+
+.quote-item{
+  display:inline-flex;
+  align-items:center;
+  gap:24px;
+}
+
+.quote-item .si{
   font-family:'Yaldevi', sans-serif;
   font-weight:600;
-  font-size:clamp(22px, 3.6vw, 32px);
-  line-height:1.6;
+  font-size:clamp(20px, 3.2vw, 28px);
   background:linear-gradient(100deg, var(--violet-2), var(--mint));
   -webkit-background-clip:text; background-clip:text; color:transparent;
-  margin-bottom:10px;
+  white-space:nowrap;
 }
-.quote-sinhala .en{
+
+.quote-item .en{
   font-family:var(--disp);
   font-weight:400;
   font-style:italic;
-  font-size:clamp(13px, 2vw, 15px);
+  font-size:clamp(12px, 1.8vw, 14px);
   color:var(--muted);
-  letter-spacing:0.3px;
+  white-space:nowrap;
+}
+
+@keyframes quoteScroll{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
 }
 
   
@@ -477,11 +496,16 @@
 
 
       
-<!-- ============ SINHALA QUOTE ============ -->
-<div class="container">
-  <div class="quote-sinhala reveal">
-    <p class="si">"සිහිනයක් නොවේ, එය ගොඩනගන කේතයකි."</p>
-    <p class="en">"Not just a dream — it's code being built."</p>
+<div class="quote-marquee-wrap">
+  <div class="quote-marquee-track">
+    <div class="quote-item">
+      <span class="si">"සිහිනයක් නොවේ, එය ගොඩනගන කේතයකි."</span>
+      <span class="en">"Not just a dream — it's code being built."</span>
+    </div>
+    <div class="quote-item">
+      <span class="si">"සිහිනයක් නොවේ, එය ගොඩනගන කේතයකි."</span>
+      <span class="en">"Not just a dream — it's code being built."</span>
+    </div>
   </div>
 </div>
 
