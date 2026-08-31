@@ -226,6 +226,36 @@
   .marquee span b{ color:var(--text); }
   @keyframes scroll{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
 
+
+
+
+.quote-line{
+  display:inline-flex;
+  align-items:center;
+  gap:24px;
+  margin-right:56px; /* skills marquee එකේ span gap එකට samana */
+}
+
+.quote-line .si{
+  font-family:'Yaldevi', sans-serif;
+  font-weight:600;
+  font-size:15px;
+  background:linear-gradient(100deg, var(--violet-2), var(--mint));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+
+.quote-line .en{
+  font-family:var(--disp);
+  font-weight:400;
+  font-style:italic;
+  font-size:13px;
+  color:var(--muted);
+}
+
+
+
+  
+
   /* ---------- Section shell ---------- */
   section{ padding:100px 0; }
   .kicker{
@@ -457,12 +487,18 @@
 
     
 
-      <!-- ============ MARQUEE ============ -->
+      <!-- ============ QUOTE MARQUEE (same box as skills marquee) ============ -->
 <div class="marquee-wrap">
   <div class="marquee">
-      <span class="si"><b>"සිහිනයක්නො වේ,</b> <b>එය ගොඩනගන කේතයකි."</b></span>
-      <span class="en"><b>"Not just a dream</b> <b>— it's code being built."</b></span>
-    </div>
+    <span class="quote-line">
+      <span class="si">"සිහිනයක් නොවේ, එය ගොඩනගන කේතයකි."</span>
+      <span class="en">"Not just a dream — it's code being built."</span>
+    </span>
+    <span class="quote-line">
+      <span class="si">"සිහිනයක් නොවේ, එය ගොඩනගන කේතයකි."</span>
+      <span class="en">"Not just a dream — it's code being built."</span>
+    </span>
+  </div>
 </div>
 
       
