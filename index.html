@@ -7,8 +7,7 @@
 <meta name="description" content="Your Name — Web Developer. Beautiful, fast, profitable websites and personal portfolio.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Yaldevi:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:       #05060A;
@@ -412,6 +411,34 @@
   .slider-arrow{ width:36px; height:36px; font-size:18px; }
 }
 
+
+
+/* ---------- Sinhala Quote Block ---------- */
+.quote-sinhala{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 60px;
+  padding:0 20px;
+}
+.quote-sinhala .si{
+  font-family:'Yaldevi', sans-serif;
+  font-weight:600;
+  font-size:clamp(22px, 3.6vw, 32px);
+  line-height:1.6;
+  background:linear-gradient(100deg, var(--violet-2), var(--mint));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+  margin-bottom:10px;
+}
+.quote-sinhala .en{
+  font-family:var(--disp);
+  font-weight:400;
+  font-style:italic;
+  font-size:clamp(13px, 2vw, 15px);
+  color:var(--muted);
+  letter-spacing:0.3px;
+}
+
+  
   
 </style>
 </head>
@@ -499,9 +526,20 @@
   <div class="about-grid">
     <div class="glass-card reveal">
       <p style="color:var(--muted); font-size:15px;">
-        I'm a passionate web developer based in Sri Lanka, focused on building clean,
-        functional, and visually engaging websites. I enjoy turning ideas into fully working
-        products — from the first sketch of a design to the final deployed website.
+
+
+
+
+<!-- ============ SINHALA QUOTE ============ -->
+<div class="container">
+  <div class="quote-sinhala reveal">
+    <p class="si">"සිහිනයක් නොවේ, එය ගොඩනගන කේතයකි."</p>
+    <p class="en">"Not just a dream — it's code being built."</p>
+  </div>
+</div>
+
+
+        
       </p>
       <br>
       <p style="color:var(--muted); font-size:15px;">
